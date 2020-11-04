@@ -6,32 +6,50 @@
     <title>Form elements</title>
 </head>
 <body>
-    <center>
+    
         <h1>User registration form </h1>
     <form name="details" action="./feedback.html" method="POST">
-        <label>First_Name:-</label>
-        <input type="text">
-        <label>Middle_Name:-</label>
-        <input type="text">
-        <label>Last_Name</label>
-        <input type="text"><br><br>
-        <label>Phone number</label>
+        <fieldset>
+            <legend>Personal Details</legend><br>
+            <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="email" >Email:-</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label>Mobile:-</label>
         <input type="number"> <br><br>
         <label>Age:-</label>
         <input type="number"><br><br>
-        <p style="display:inline">Company:-</p>
+        <label>Gender</label>
+        <select name="Gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                Company Details
+            </legend><br>
+            <p style="display:inline">Company:-</p>
         <input type="radio" id='c' name="Company">
         <label for="c">Contentstack</label>
         <input type="radio" id='r' name="Company">
         <label for="r">Raw_Engg.</label><br><br>
-        <label>Gender</label>
-        <select name="">
-            <option value="M">Male</option>
-            <option value="F">Female</option>
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>
+                Location
+            </legend><br>
+            <label>Country</label>
+        <select name="Country">
+            <option value="I">India</option>
+            <option value="E">Europe</option>
         </select><br><br>
+        </fieldset><br>
         <button>Submit</button>
+        <button>Reset</button>
     </form>
-    </center>
+    
     
 </body>
 </html>
