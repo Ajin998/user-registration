@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form elements</title>
-</head>
-<body>
-    
-        <h1>User registration form </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./styles/user.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>User registration form</h1>
     <form name="details" action="./index.html" method="POST">
-        <fieldset>
-            <legend>Personal Details</legend><br>
-            <label for="name">Name:</label>
-        <input type="text" id="name" required><br><br>
-        <label for="email" >Email:-</label>
-        <input type="email" name="email" id="email" required><br><br>
+      <fieldset class="personal_details">
+        <legend>Personal Details</legend>
+        <br />
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="eg:-XYZ"
+        /><br /><br />
+        <label for="email">Email:-</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="eg:-XYZ@gmail.com"
+        /><br /><br />
         <label>Mobile:-</label>
-        <input type="number"> <br><br>
+        <input type="number" placeholder="eg:- 98989898989" /> <br /><br />
         <label>Age:-</label>
-        <input type="number" required><br><br>
+        <input
+          type="number"
+          required
+          style="width: 15%"
+          placeholder="18"
+        /><br /><br />
         <label>Gender</label>
         <select name="Gender">
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select><br><br>
+          <option value="M">Male</option>
+          <option value="F">Female</option></select
+        ><br /><br />
         <label for="birth">Date of Birth:-</label>
-        <input type="date" id="birth">
-        </fieldset><br>
-        <fieldset>
-            <legend>
-                Company Details
-            </legend><br>
-            <p style="display:inline">Company:-</p>
-        <input type="radio" id='c' name="Company">
+        <input type="date" id="birth" />
+      </fieldset>
+      <br />
+      <fieldset class="company">
+        <legend>Company Details</legend>
+        <br />
+        <p style="display: inline">Company:-</p>
+        <input type="radio" id="c" name="Company" />
         <label for="c">Contentstack</label>
-        <input type="radio" id='r' name="Company">
-        <label for="r">Raw_Engg.</label><br><br>
-        </fieldset><br>
-        
-        <fieldset>
-            <legend>
-                Location
-            </legend><br>
-            <label>Country</label>
+        <input type="radio" id="r" name="Company" />
+        <label for="r">Raw_Engg.</label><br /><br />
+      </fieldset>
+      <br />
+
+      <fieldset class="location">
+        <legend>Location</legend>
+        <br />
+        <label>Country</label>
         <select name="Country">
-            <option value="I">India</option>
-            <option value="E">Europe</option>
-        </select><br><br>
-        </fieldset><br>
-        <button>Submit</button>
-        <button>Reset</button>
-    </form><hr>
-   <center><footer>The end of the form</footer></center> 
-    
-</body>
+          <option value="I">India</option>
+          <option value="E">Europe</option></select
+        ><br /><br />
+      </fieldset>
+      <br />
+      <div class="buttons">
+        <button id="submit-btn">Submit</button>
+        <a href="./index.html"><button id="reset-btn">Reset</button></a>
+      </div>
+    </form>
+    <hr />
+    <center>
+      <footer class="footer-section">
+        <p>Copyright @ 2020</p>
+        <p>Courtesy by Ajin</p>
+      </footer>
+    </center>
+  </body>
 </html>
